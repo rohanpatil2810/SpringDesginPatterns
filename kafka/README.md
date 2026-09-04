@@ -81,3 +81,16 @@ Kafka Topic: order-events
 @KafkaListener (notification-group)
     ↓
 OrderEventListener → prints notification
+
+
+Key Points Learned
+
+JsonSerializer / JsonDeserializer for object ↔ JSON conversion
+Consumer Group (notification-group)
+auto-offset-reset: earliest
+acks=all for durability
+Type headers disabled → explicit spring.json.value.default.type required
+
+
+Author
+Rohan Patil
